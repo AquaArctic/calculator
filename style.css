@@ -1,0 +1,108 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: white; /* Change body background color to white */
+  }
+  
+  .container {
+    background-color: lightgrey; /* Calculator background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex; /* Add this line to use flexbox */
+    flex-direction: column; /* Add this line to stack elements vertically */
+    align-items: center; /* Add this line to center elements horizontally */
+  }
+  
+  .clear-delete-container {
+    display: flex;
+    justify-content: space-evenly; /* Use space-between to distribute space evenly */
+    width: 100%; /* Ensure the container takes the full width */
+    margin-bottom: 10px; /* Add some spacing at the bottom */
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    font-size: 24px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    width: 70px;
+    height: 50px;
+    font-size: 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Numbers in light pink */
+  #zero,
+  #one,
+  #two,
+  #three,
+  #four,
+  #five,
+  #six,
+  #seven,
+  #eight,
+  #nine {
+    background-color: lightpink;
+    color: black;
+  }
+  
+  button#clear,
+  button#delete {
+    width: 100px;
+    height: 60px;
+    font-size: 18px;
+    background-color: blue;
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s; /* Add transition property for smoother effect */
+  }
+  
+  /* Dot and Equal in black */
+  #decimal,
+  #equals {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Operators in light green */
+  .operators {
+    background-color: lightgreen;
+    color: black;
+  }
+  
+  /* Hover effect for all buttons */
+  button:hover {
+    opacity: 0.7;
+    font-weight: bold; /* Increase font weight on hover */
+    transform: scale(1.1); /* Scale up the button on hover */
+  }
+  
+  /* Specific hover styles for the colored buttons */
+  button#clear:hover,
+  button#delete:hover {
+    background-color: darkblue;
+  }
+  
+  button#decimal:hover,
+  button#equals:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  button.operators:hover {
+    background-color: lightgreen;
+  }
+  
